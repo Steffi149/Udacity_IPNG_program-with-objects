@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>My First Website Project</title>
+    <meta name="viewport" content="width=device-width">
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!DOCTYPE html>
+<html>
+
+<head>
+  <title>CodePen - Notes by Stefanie</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- TOC -->
+  <div class="TOC">
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href="#introduction">Introduction: Overview of the Internet</a>
+        <ul>
+          <li><a href="#introduction-0-1">World Wide Web</a></li>
+          <li><a href="#introduction-0-2">HTML</a></li>
+        </ul>
+      </li>
+      <li><a href="#lesson-1">Chapter 1: Introduction to HTML</a>
+      </li>
+      <li><a href="#lesson-2">Chapter 2: Creating a Structured Document with HTML</a>
+        <ul>
+          <li><a href="#lesson-2-1">Purposes of HTML, CSS and JavaScript</a></li>
+        </ul>
+      </li>
+      <li><a href="#lesson-3">Chapter 3: Webpages, Documents, and Structure</a>
+        <ul>
+          <li><a href="#lesson-3-1">Adding CSS Style to HTML Structure</a></li>
+        </ul>
+      </li>
+      <li><a href="#lesson-4">Chapter 4: Introduction to “Serious” Programming</a>
+        <ul>
+          <li><a href="#lesson-4-1">Introduction to “Serious” Programming</a></li>
+          <li><a href="#lesson-4-2">Getting started with Python</a></li>
+          <li><a href="#lesson-4-3">How Python Works</a></li>
+        </ul>
+      </li>
+      <li><a href="#lesson-5">Chapter 5: Variables and Strings</a>
+        <ul>
+          <li><a href="#lesson-5-1">What is a Variable in Python?</a></li>
+          <li><a href="#lesson-5-2">What is a String in Python?</a></li>
+          <li><a href="#lesson-5-3">Input, Function, Output</a></li>
+        </ul>
+      </li>
+      <li><a href="#lesson-6">Chapter 6: Structured Data: Lists & Loops</a>
+        <ul>
+          <li><a href="#lesson-6-1">Mutation and Aliasing</a></li>
+          <li><a href="#lesson-6-2">List Operations</a></li>
+        </ul>
+      </li>
+      <li><a href="#lesson-7">Chapter 7: How to Solve a Problem</a>
+        <ul>
+          <li><a href="#lesson-7-1">Pythonista's Guide to all Problems in the Universe</a>
+        </ul>
+        </li>
+        <li><a href="#lesson-8">Chapter 8: Object Oriented Programming</a>
+          <ul>
+            <li><a href="#lesson-8-1">Introduction to Abstraction</a></li>
+            <li><a href="#lesson-8-2">Concepts & Rules in Object Oriented Programming</a></li>
+          </ul>
+      </li>
+      <li><a href="#lesson-9">Chapter 9: xxx</a>
+          <ul>
+            <li><a href="#lesson-9-1">Introduction to Networks</a></li>
+            <li><a href="#lesson-9-2">yyy</a></li>
+          </ul>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Stage 0-->
+  <h1 id=introduction>Introduction: Overview of the Internet</h1>
+  <div class="concept">
+    <h2 id=introduction-0-1>World Wide Web</h2>
+    <p> The <em>World Wide Web</em> is an information system on the Internet which allows documents to be connected to other documents by hypertext links. The interlinked hypertext documents are often written in the Hypertext Markup Language (<em>HTML</em>).
+    </p>
+    <ul>
+      <li>HTML = Hyper Text Markup Language</li>
+      <li>browser &gt; internet &gt; server</li>
+      <li>HTTP = main protocol to communicate with servers</li>
+      <li>server = computers that host the files that make up the web</li>
+      <li>Internet = world’s largest computer network</li>
+      <li>browser = a program on the computer to display files found on web</li>
+    </ul>
+    <br>
+  </div>
+  <div class="concept">
+    <h2 id=introduction-0-2>HTML</h2>
+    <p>A web page is a text document written in a language called HTML. Web browsers read these documents, and then interpret and display them.
+    </p>
+    <ul>
+      <li>text content = what you see</li>
+      <li>markup = what it looks like</li>
+      <li>references to other documents (videos, image,..)</li>
+    </ul>
+    <p>Coding happens when programmers write text in a language that a computer can understand. The computer can then follow the instructions the programmer wrote.</p>
+    <br>
+  </div>
+  <h1 id=lesson-1>Chapter 1: Introduction to HTML</h1>
+  <div class="concept">
+    <p>HTML is a markup language for describing web documents (web pages). It stands for Hyper Text Markup Language. A markup language is a set of markup tags. HTML documents are described by HTML tags. Each HTML tag describes different document content.
+      Technically, an HTML element is made up of the opening tag (&lt;p&gt; for example), the content (everything between the tags), and the closing tag(&lt;/p&gt;). There is also the term "attribute". This is a property of an HTML element. For example,
+      to set the href attribute of an anchor tag to the Udacity URL, you would write &lt;a href="www.udacity.com"&gt;
+    </p>
+    <h3>HTML examples</h3>
+    <ul>
+      <li>&lt;b&gt; = <b>bold</b></li>
+      <li>&lt;em&gt; = <em>emphasis/italic</em></li>
+      <li>&lt;a href = "..."&gt; = link f.ex. <a href="http://img.izismile.com/img/img5/20120716/640/do_the_derp_640_34.jpg">this is derp</a></li>
+    </ul>
+    <img class="linkedImage" src="http://www.gencgrafiker.com/wp-content/uploads/2013/09/html-site-yapmayi-ogrenme.jpg" alt="HTML">
+    <p>There are different kind of html elements. Usually each html starting tag also has an end tag. But sometimes tags don't need to be closed. These kind of tags are called <b>void tags</b>. Void elements are a special kind of elements that must not have
+      content.
+    </p>
+    <h3>Void elements</h3>
+    <ul>
+      <li>&lt;br&gt; = line break</li>
+      <li>&lt;img src="url" alt="text"&gt; = adding an image to the text
+      </li>
+    </ul>
+
+    <p> Other kind of html elements are defined as block level elements or inline elements. Block level elements create invisible boxes that shift to a new line (f.ex. h1, p, ul, div, form). Inline elements are normally displayed without line breaks (f.ex.
+      br, a, img, span). The actual html content goes into the &lt;body&gt;-section. CSS (Cascading Style Sheets) allows you to specify things such as appaerance and we will learn it later in this course.
+    </p>
+    <br>
+  </div>
+  <!-- Stage 1-->
+  <h1 id=lesson-2>Chapter 2: Creating a Structured Document with HTML</h1>
+  <div class="concept">
+    <h2 id=lesson-2-1>Purposes of HTML, CSS and JavaScript</h2>
+    <p>A website is like a house. HTML is its structure, its architect’s plan. CSS are then the style – colors, decoration and so on. Java Script files are interactive components like the electric garage door.
+      <br> We also learn that not all elements of the source code are visible on the website but for sure all elements are ordered in rectangular boxes. The structure of all websites containing these boxed elements is tree-like.
+    </p>
+    <h3>Bullet points</h3>
+    <ul>
+      <li>HTML and CSS are both <em>languages</em></li>
+      <li> HTML controls the <em>structure</em> of a web page</li>
+      <li> CSS controls the <em>style</em> of a page (how it looks)</li>
+      <li> When programmers talk about the <em>DOM</em> (Document Object Model) they are talking about the tree-like structure of a page</li>
+    </ul>
+    <p>An element starts and ends with a tag. In its middle there can be content. This content can be text or another tag. Each tag can have attributes with values. CSS defines the style, meaning how elements look on the page. Every element is a box but
+      with CSS you can change the form elements are displayed on the page. However, you can break down any webpage to their boxes. Boxes can be summarized with div-tags. Within these div-tags attributes can be determined that give the box a name.
+    </p>
+    <h3>Tools</h3>
+    <ul>
+      <li> <b>Sublime</b> = <a href="http://www.sublimetext.com/2"> text editing program</a>; difficult in the beginning but has all the languages</li>
+      <li> <b>Scratchpad</b> = for small projects; beginner-friendly; immediate speed of feedback</li>
+      <li> <b>Codepen</b> = fewer beginner friendly features; 3 languages (HTML, CSS, Javascript), easy to share</li>
+    </ul>
+    <br>
+  </div>
+  <h1 id=lesson-3>Chapter 3: Webpages, Documents, and Structure </h1>
+  <div class="concept">
+    <h2 id=lesson-3-1>Adding CSS Style to HTML Structure</h2>
+    <!-- ID selectors are the most powerful type of selector in terms of CSS specificity. Meaning that they beat out other types of selectors and the styles defined within win. -->
+    <p>You can have several CSS (<em>Cascading Style Sheets</em>) files or sheets that will be referenced in HTML and all of them will be used to find out the final and visible style for the page. CSS is code written to control the "style" of HTML elements.
+      the HTML and CSS files are separate, which is the great thing about CSS, keeping the design away from the document.
+      <br> Cascading means keep on going down with the rules and see which ones apply (priority rules). That idea is known as <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">inheritance</a> and understanding it requires abstract
+      thinking. When a CSS selector inherits a CSS class it is as if that class is applied to all elements within the document that match the selector. What is a CSS selector?
+      <br> In CSS you start with what is called a <a href="https://css-tricks.com/how-css-selectors-work/">selector</a>. It defines to what elements of a page a particular style applies to. A particular style can be expressed through a rule. A rule set consists
+      of a selector followed by a declaration block. A declaration is made up of a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">property</a> name and a value, separated by a colon; whitespace characters can appear around any of
+      these elements {property: value}. If we want to apply a style to a bunch of grouped up html elements, we can use class selectors.
+      <br> Class selectors are probably the most useful and versatile selectors out there. In part because they are well supported in all browsers. In part because you can add multiple classes (just separated by a space) on HTML elements. In part because
+      there are JavaScript things you can do specifically for manipulating classes.
+    </p>
+    <div class="extra">
+      <b>Extra:</b>
+      <ul>
+        <li>In HTML, code comments begin with &lt;!-- and end with --&gt;. Everything in between is ignored.
+          <li> In CSS, code comments begin with /* and end with *</li>
+      </ul>
+    </div>
+    <h3> Avoiding repetition </h3>
+    <p> Avoiding repetition is essential.
+      <!-- from Andy's notes -->When programmers don't avoid repetition, they will often have to do the same thing over and over.
+      <br> This may mean copy and pasting certain style attributes into many HTML elements or rewriting the same code (sometimes with minor differences) many times.
+      <br> This can lead to errors when the programmer decides to make a change to something.
+      <br> If they don't dilligently make that same change everywhere the repeated code appears, problems will arise.
+    </p>
+    <br>
+    <h3>Object Oriented CSS (OOCSS)</h3>
+    <p> As with any object-based coding method, the purpose of OOCSS is to encourage code reuse and, ultimately, faster and more efficient stylesheets that are easier to add to and maintain.
+      <br> In CSS we often code the same visual components over and over again — even within the same project. It’s embarrassing how many separate times in my career I’ve coded a two-column layout, or tabbed navigation, or a dropdown menu, or a popup (and
+      the list goes on).
+      <br> To deal with this problem Nicole Sullivan created the Object Oriented CSS (OOCSS) project. She suggests that instead of defining entire components in a single selector, developers should identify the visual patterns that appear over and over again
+      and break them down into their reusable parts, defining each part as a separate class. Those classes can then be used and reused together in the HTML to build a variety of complex UI components. ....
+      <a href="http://philipwalton.com/articles/the-future-of-oocss-a-proposal/">Read more</a>
+    </p>
+  </div>
+
+  <!-- Stage 2-->
+
+  <h1 id=lesson-4>Chapter 4: Introduction to “Serious” Programming</h1>
+  <div class="concept">
+    <h2 id=lesson4-1>Introduction to “Serious” Programming</h2>
+    <p> Most machines (like a toaster) are designed to do a few things. Unless you physically alter these machines, they will only be able to do those things. Computers are different. A computer can be programmed to do anything we want, as long as we can
+      write a program that specifies a <em>specific sequence of instructions</em>.
+      <br> Computer Science is about how to solve problems like building a search engine by breaking them into smaller pieces and then precisely and mechanically describe the series of steps that you can use to solve each peace. For a search engine the three
+      pieces are: <b>1)</b> Find date <b>2)</b> Build an index and <b>3)</b> Rank pages
+    </p>
+    <br>
+  </div>
+  <div class="concept">
+    <h2 id=lesson4-2>Getting started with Python</h2>
+    <p> Programming is the core of computer science. <a href="http://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a> is high-level programming language to write programs. Those will be input to another program which is a Python interpreter
+      that follows the instructions in your code and it does that by following the instruction in its code.... So, the program we are writing runs on the Python program. It runs our programs, interprets them and executes the programs that we write in
+      Python language into the language the computer requires.
+      <br> Any amount of code counts as a program. Even if you're just writing a single line of code, you're writing a computer program. <img class="linkedImage" src="http://images6.fanpop.com/image/photos/33000000/Monty-Python-old-school-comedy-33036168-1280-800.jpg"
+      alt="Monty">
+    </p>
+    <h3> Ways of Thinking</h3>
+    <ul>
+      <li>1. The line "...follows the instructions in your code..." references the <b>procedural thinking</b> required of programmers.</li>
+      <li>2. To understand how computers and programs work <b>technological empathy</b> is required.</li>
+      <li>3. When thinking of a Python program, a Python interpreter, and a web browser as different versions of the same thing (a computer program) it shows <b>abstract thinking</b>.</li>
+    </ul>
+    <p>
+      Other ways of thinking that all programmers have to use all the time are called <b>systems thinking</b> wiich happens when you break a big problem down into smaller pieces and <b>debugging</b> which is a systematic process of relentlessly identifying
+      the cause of a computer program that doesn't work.
+    </p>
+    <h2 id=lesson-4-3>How Python Works</h2>
+    <p># This is a Python comment. Lines that begin with a '#' are ignored by the Python interpreter. Comments are useful for documenting code or explaining quiz questions! Languages like Python need to be invented to program computers because of ambiguity
+      and verbosity.
+    </p>
+    <p> Like English, Python has certain grammar. But it is much stricter. A grammar is a specification of what is "correct" and what is "incorrect." Python Grammar for arithmetic expression:
+    </p>
+    <div class="extra">
+      <p><b>Extra:</b>
+        <br>When a program doesn't work, it's because there is a mistake (also known as a "bug") somewhere in the computer code. Since these mistakes are an unavoidable part of programming, every good programmer has a system for fixing them and that system
+        usually looks something like this:
+      </p>
+      <ul>
+        <li>Collect evidence (what makes this program fail?)</li>
+        <li>Generate theories (what may have caused this problem?)</li>
+        <li>Test those theories (if my theory is correct, how could I find out?)</li>
+        <li>Fix the problem
+      </ul>
+    </div>
+    <ul>
+      <li>Expression --> Expression Operator Expression = <b>recursive definition</b></li>
+      <li>Expression --> Number</li>
+      <li>Expression --> (Expression)</li>
+      <li>Operator --> +</li>
+      <li>Operator --> *</li>
+      <li>Number --> 0; 1; ….</li>
+    </ul>
+    <p>A Python "expression" is a legal Python statement. For example: print 1 + 1 is a valid expression, but print 1 + (without a number at the end) is not. When you divide an integer (number without a decimal) by another integer, Python does something
+      called integer division which means it ignores the decimal part of the answer. For example, 5/2 gives 2 instead of 2.5, and 1/10 gives 0 instead of 0.1.
+      <br> To force Python to give you an answer including a decimal, you need to make one of the numbers into a decimal by putting a decimal point after it. For example, 5/2.0 gives 2.5, and so does 5.0/2.
+    </p>
+    <br>
+  </div>
+  <h1 id=lesson-5>Chapter 5: Variables and Strings</h1>
+  <div class="concept">
+    <h2 id=lesson-5-1>What is a Variable in Python? </h2>
+    <P>Variables give programmers a way to give names to values. If <em>my_variable</em> is a variable with a value of 2, then the following code would print out 4:
+      <br>
+      <em>print my_variable + my_variable</em>
+      <br> We can assign the value 2 to the variable my_variable by writing code like this:
+      <br>
+      <em>my_variable = 2</em> (assignment statement: name = expression)
+    </P>
+    <p> The equal "=" sign in the assignment shouldn't be seen as "is equal to" or "takes the value of". It should be "read" or interpreted as an arrow. The equal sign means assignment.
+      <br>
+      <b>Attention</b>: Having 2 equal signs '==' means comparison. F.ex.: Writing the code <em>print 5 == 5</em> in Python, the result would be <em>True</em>.
+    </p>
+    <p>As the name implies, a variable is something which can vary. It can be seen as a container (or some say a pigeonhole) to store certain values. A variable can change throughout the programming process i.e. a new value will be assigned to the variable.
+      The same expression can therefore have different meanings. Variables can be useful to programmers in many ways:
+    </p>
+    <ul>
+      <li>They improve code readability by using names that make sense to humans.</li>
+      <li>They give us a way to store the value of important data.</li>
+      <li>They give us a way to change the value of something.</li>
+    </ul>
+    <br>
+  </div>
+  <div class="concept">
+    <h2 id=lesson-5-2>What is a String in Python?</h2>
+    <p>A <a href="https://developers.google.com/edu/python/strings"> string </a>in Python is a sequence of characters end starts and ends with a quote f.ex. “I am a string!”. In Python, 2 is a number "2" is a string. You recognized that Python strings must
+      have the same quote symbol (either ' or ") on both sides of the string. In addition to using single quotes (') or double quotes (") to create a string, you can also use TRIPLE quotes to create a multi-line string. To a variable there can either
+      be a number or a string defined. Strings can be connected by <em>&lt;string&gt; + &lt;string&gt;</em>. That is called concatenation.
+      <br>
+      <br>
+    </p>
+  </div>
+  <div class="concept">
+    <h2 id=lesson-5-3>Input, Function, Output</h2>
+    <h3> What is a Function?</h3>
+    <img class="linkedImage" src="http://www.pythoncentral.io/wp-content/uploads/2013/08/validate-python-function-parameters-and-return-types-with-decorators.png" alt="Python">
+    <p> A function is something that takes input, does something to that input, and then produces output. For example, a function named square might take a number as input and produce the square of that number as output.
+      <br>
+      <em>say_hello</em> is a function or, as others would call it, a <b>procedure</b>. This procedure isn't particularly interesting because it only does one thing.</p>
+    <p> A function is a piece of code in a program. The function performs a specific task. The advantages of using functions are:</p>
+    <ul>
+      <li>Reducing duplication of code</li>
+      <li>Decomposing complex problems into simpler pieces</li>
+      <li>Improving clarity of the code</li>
+      <li>Reuse of code</li>
+      <li>Information hiding</li>
+    </ul>
+    <h3> How Functions are Made and Used</h3>
+    <p>The word <em>def</em> tells Python that we are defining a new function. This is exactly how functions are <b>made</b>!
+      <br> We <b>use</b> a function by passing in values for the parameters.
+      <br> Functions take <b>input</b>, do something with it, and then produce <b>output</b>. The <em>return</em> keyword tells Python exactly what the function should produce as output.
+      <br>
+      <br> For example: The procedure <em>sum()</em> takes two inputs. And it even changes the value of the first one to be the sum of the two within the function. sum() doesn't return the changed value of a. The sum procedure does not actually change the
+      values of the inputs. In fact, it is impossible to write a procedure that changes the value of an integer or string input, since these types are immutable. That means that once we create an object of an integer or string type, there is nothing that
+      can be done to change the value of that object.
+      <br> Functions are tools that programmers can create and reuse forever! Once you've defined a function once, you never have to define it again. Functions thereby become valuable assets since they help avoiding repetition.
+    </p>
+    <h3> Control Flow & Loops: If and While</h3>
+    <p>If and else are function commands.
+      <br>
+      <br> F.ex.
+      <br>
+      <p style="text-indent:20px;"><b>if</b> 10 > 20:
+        <br>
+      </p>
+      <p style="text-indent:40px;"><b>print</b> "Did you know that 10 is greater than 20!?"
+        <br>
+      </p>
+      <p style="text-indent:20px;"><b>else</b>:
+        <br>
+      </p>
+      <p style="text-indent:40px;"><b>print</b> "20 is greater than 10"
+        <br>
+      </p>
+      <br> Would show: 20 is greater than 10.
+      <br> So the way an if-procedure works is if &lt;test expression&gt;:
+      <br>
+      <p style="text-indent:300px;">&lt;block&gt;
+        <br>
+      </p>
+      <p>But if the condition isn’t true, it doesn’t show anything. That is why we can use “else”, so an alternative statement is shown. (similar to excel functions).
+      </p>
+      <p>While: A while loop repeatedly executes the body of the loop until the "test condition" is no longer true.
+        <br> There can be <a href="http://en.wikipedia.org/wiki/Infinite_loop">infinite loops</a> that never stop.
+      </p>
+      <h3> Debugging</h3>
+      <p>Errors in Python are called tracebacks. It gives a lot of information like line number and function and help focusing attention. You can look up the error message online.
+        <br> Debugging Strategies:</p>
+      <ul>
+        <li><b>1.	Examine error messages when programs crash</b>
+          <br> The last line of Python Tracebacks will tell you what went wrong. Reading backwards from there will tell you more about where the problem occurred.
+        </li>
+        <li><b>2.	Work from example code</b>
+          <br> If your modified code doesn't work, comment it out and do step-by-step modifications to the example code until it does what you want.
+        </li>
+        <li><b>3.	Make sure examples work</b>
+          <br> Just because you find example code doesn't mean it will work in your system. Check the example code you're using to make sure it behaves the way you expect.
+        </li>
+        <li><b>4.	Check (print) intermediate results</b>
+          <br> When your code doesn't crash, but doesn't behave as expected, add print statements to your program to see where in the code things stop behaving correctly.
+        </li>
+        <li><b>5.	Keep and compare old versions</b>
+          <br> When you have a working version of your code, save it before you add to the code. This will give you something to go back to if you introduce too many new bugs.
+        </li>
+      </ul>
+      <br>
+  </div>
+
+  <h1 id=lesson-6>Chapter 6: Structured Data: Lists & Loops</h1>
+  <div class="concept">
+    <p>A string is a structured data because it is a sequence of characters that can be operated on subsequences.
+      <br> Lists are more powerful, because elements don’t need to be necessarily characters. A string can be a sequence of anything. The <a href="http://www.tutorialspoint.com/python/python_lists.htm">list</a> is a most versatile datatype available in Python
+      which can be written as a list of comma-separated values (items) between square brackets. Important thing about a list is that items in a list need not be of the same type.
+    </p>
+    <h2 id=lesson-6-1>Mutation and Aliasing</h2>
+    <p>Mutation means changing the value of an object. Lists support mutation. It is called aliasing when there are 2 names that refer to the same object. However, strings are immutable. Learning how technology actually works is how you build <b>technological empathy</b>.
+      This empathy will help diagnosing and fixing bugs that otherwise would have been a mystery.
+    </p>
+    <h2 id=lesson-6-2>List Operations</h2>
+    <p>There are many built-in operations on lists. Here are a few of the most useful ones here:
+      <br>
+      <br>
+      <b>Append</b>. The append method adds a new element to the end of a list. The append method mutates the list that it is invoked on, it does not create a new list.
+      <br>
+      <b>Concatenation</b>. The + operator can be used with lists and is very similar to how it is used to concatenate strings. It produces a new list, it does not mutate either of the input lists.
+      <br>
+      <b>Length</b>. The <em>len</em> operator can be used to find out the length of an object. The len operator works for many things other than lists, it works for any object that is a collection of things including strings. The output from len is the
+      number of elements in its input.
+      <br>
+      <b>For</b>. For loops are traditionally used when you have a piece of code which you want to repeat n number of times. As an alternative, there is the WhileLoop, however, while is used when a condition is to be met, or if you want a piece of code
+      to repeat forever,
+      <br>
+      <b>Sum</b>. Sums start and the items of an iterable from left to right and returns the total. start defaults to 0. The iterable‘s items are normally numbers, and the start value is not allowed to be a string. For some use cases, there are good alternatives
+      to <em>sum()</em>.
+      <br>
+    </p>
+    <br>
+  </div>
+  <h1 id=lesson-7>Chapter 7: How to Solve a Problem</h1>
+  <div class="concept">
+    <h2>Pythonista's Guide to all Problems in the Universe</h2>
+    <img class="linkedImage" src="http://troll.me/images/problem-solved-meme/problem-solved.jpg" alt="Problem Solved">
+    <ul>
+      <li>
+        <b>Don't panic!</b>
+      </li>
+      <li>1. What are the inputs?</li>
+      <li>2. What are the outputs?</li>
+      <li>3. Work through some examples by hand</li>
+      <li>4. Simple mechanical solution</li>
+      <li>5. Develop incrementally and test as we go.</li>
+    </ul>
+    <p><b>Attention:</b> Computers are stupid! This phrase refers to how they interpret instructions literally. This means that small typos can cause big problems.
+    </p>
+    <br>
+    <br>
+  </div>
+
+  <!-- Stage 3-->
+  <h1 id=lesson-8>Chapter 8: Object Oriented Programming</h1>
+  <div class="concept">
+    <h2 id=lesson-8-1>Introduction to Abstraction</h2>
+    <p> Abstraction is when certain processes in Python are hid from us, for example the way the webbrowser or time module works. We cannot see what is happening “behind the scenes” but we can read about it in their documentation. These functions are part
+      of the <a href=”https://docs.python.org/2.7/library“>Python standard library </a>, which "desccribes the standard library that is distributed with Python. It also describes some of the optional components that are commonly included in Python distributions". We can use these functions to help us programming a certain program, such as the “Take a break” program. Reading documentation is a key skill and takes effortto acquire.
+      It is a key attribute of an expert programmer.
+      <br> Functions like <em>open</em> are always available because they are so commonly used. We call those
+      <a href="https://docs.python.org/2/library/functions.html"> Built-in Functions </a>. Open returns an object of the file type. <em>Twilio</em> on the other hand is not part of the standard Python library. It is one of the external Python packages.
+    </p>
+    <p> To write programs, basic functions can be helpful already. If we want to make a program that has our favorite movie and shows their trailers, it can save time to create templates. To create multiple templates, we will learn about the concept of classes
+      and other concepts of object-oriented programming.
+    </p>
+    <h2 id=lesson-8-2>Concepts & Rules in Object Oriented Programming</h2>
+    <p><b>Object Oriented Programming (OOP)</b> is a programming language model organized around "objects" rather than "actions" and data rather than logic.
+      <br>
+      <br> The central concept of object-oriented programming is the object, which is a kind of module containing data and subroutines. The point-of-view in OOP is that an object is a kind of self-sufficient entity that has an internal state (the data it
+      contains) and that can respond to messages (calls to its subroutines). A mailing list object, for example, has a state consisting of a list of names and addresses. If you send it a message telling it to add a name, it will respond by modifying its
+      state to reflect the change. If you send it a message telling it to print itself, it will respond by printing out its list of names and addresses.
+      <br>
+      <br>The OOP approach to software engineering is to start by identifying the objects involved in a problem and the messages that those objects should respond to. The program that results is a collection of objects, each with its own data and its own
+      set of responsibilities. The objects interact by sending messages to each other. There is not much "top-down" in the large-scale design of such a program, and people used to more traditional programs can have a hard time getting used to OOP. However,
+      people who use OOP would claim that object-oriented programs tend to be better models of the way the world itself works, and that they are therefore easier to write, easier to understand, and more likely to be correct.
+      <br>
+      <br> It is common for objects to bear a kind of "family resemblance" to one another. Objects that contain the same type of data and that respond to the same messages in the same way belong to the same class. (In actual programming, the class is primary;
+      that is, a class is created and then one or more objects are created using that class as a template.) But objects can be similar without being in exactly the same class....<a href="http://math.hws.edu/javanotes/c1/s5.html">Read more</a>
+    </p>
+    <h3> Draw Turtles</h3>
+    <p> “<a href=”https://docs.python.org/2/library/turtle.html”>Turtle graphics</a> is a popular way for introducing programming to kids. It was part of the original Logo programming language developed by Wally Feurzig and Seymour Papert in 1966. The procedural
+      interface provides functions which are derived from the methods of the classes <em>Screen</em> and <em>Turtle</em>. They have the same names as the corresponding methods. A screen object is automatically created whenever a function derived from
+      a Screen method is called. An (unnamed) turtle object is automatically created whenever any of the functions derived from a Turtle method is called.” <img src="http://www.openbookproject.net/thinkcs/archive/python/thinkcspy3e_abandoned/_images/sprialling_squares.png"
+      alt="Turtle" style="float:right;">
+      <br>
+      <br> There are different functions defined within this class "Turtle". A <b>class</b> is comparable with a neatly packaged box that put things together like “turtle.Turtle()”.One is called <em>def…init…</em>. It creates space in memory for a new object
+      of the class. This object we called brad and brad can access the rest of the methods inside the class "Turtle" f.ex. <em>def forward, def right</em>.
+      <br> Brad and Angie are instances of that class "Turtle".
+      <br>
+      <br> A class in Python is like a blueprint of a building and tells us certain things. As a blueprint can be used to build multiple different buildings, the class "Turtle" contains certain information about the turtle (color, movements,..). And from
+      one class multiple instances can be creates (f.ex. as angie or brad).
+      <br> A class is therefore defined as a group of functions or certain data input. It is an object with certain properties. An instance of a class can accesses the rest of the methods inside a class. An instance is a materialized class. If for example
+      "dogs" were the class, Labrador, Husky, ... can be the instances.
+      <br> A subclass of a class is said to inherit the properties of that class. The subclass can add to its inheritance and it can even "override" part of that inheritance (by defining a different response to some method).
+      <br>
+      <br>
+      <b>Inheritance</b> is a powerful means for organizing a program. It is also related to the problem of reusing software components. A class is the ultimate reusable component. Not only can it be reused directly if it fits exactly into a program you are trying to write, but if it just almost fits, you can still reuse it by defining a subclass and making only the small changes necessary to adapt it exactly to your needs. So, OOP is meant to be both a superior program-development tool and a partial solution to the software reuse problem. This is why Object Oriented Programming is a valuable tool for thinking about large programming projects.
+    </p>
+    <p>When we create an instance of a class, the <b>init</b> function inside the class gets called. Init creates space in memory for the new instance. It initializes pieces of information. Init is therefor called a <a href=”http://en.wikipedia.org/wiki/Constructor_%28object-oriented_programming%29”>constructor</a>.
+      When we create an instance of a class, the class constructor is being called.
+    </p>
+    <p> Self refers to the instance in question. Even though self is not a keyword, it is a convention that is used by most Python programmers. Using the word self will make the code more readable to other programmers. It is the first argument of the init
+      function.
+    </p>
+    <br>
+    <br>
+  </div>
+
+  <table class="tg">
+    <tr>
+      <th>Term</th>
+      <th>Definition of Term
+        <br>
+      </th>
+    </tr>
+    <tr>
+      <td>class</td>
+      <td>group of functions or certain data input; an object with certain properties
+        <br>
+      </td>
+    </tr>
+    <tr>
+      <td>init function</td>
+      <td>creates space in memory for the new instance; initializes pieces of information;
+        <br>also called "constructor"
+        <br>
+      </td>
+    </tr>
+    <tr>
+      <td>instance</td>
+      <td>an instance of a class can accesses the rest of the methods inside a class</td>
+    </tr>
+    <tr>
+      <td>self</td>
+      <td>= instance in question</td>
+    </tr>
+    <tr>
+      <td>instance
+        <br>variables</td>
+      <td>are unique to each instance of the class; all of the variables associated with a specific instance; f.ex.
+        <br>movie_title, storyline, …</td>
+    </tr>
+    <tr>
+      <td>instance method</td>
+      <td>a function defined inside a class and associated with an instance</td>
+    </tr>
+    <tr>
+      <td>class variables</td>
+      <td>are shared in the sense that they are accessed by all,objects (instances) of that class. There is only copy of the class variable and when any one,object makes a change to a class variable, the change is reflected in all the other instances,as well...
+        <a href="http://www.ibiblio.org/g2swap/byteofpython/read/class-and-object-vars.html">Read more</a>
+      </td>
+    </tr>
+    <tr>
+      <td>inheritance</td>
+      <td>describe the process of a child class inheriting some or all features of the connected parent class...<a href="https://docs.python.org/2/tutorial/classes.html">Read more</a></td>
+    </tr>
+    <tr>
+      <td>method overriding
+        <br>
+      </td>
+      <td>is the ability of a class to change the implementation of a method provided by one of its ancestors</td>
+    </tr>
+    <tr>
+      <td>module
+        <br>
+      </td>
+      <td>is a file containing Python definitions and statements. The file name is the module name with the suffix .py appended...<a href="https://docs.python.org/2/tutorial/modules.html">Read more</a></td>
+    </tr>
+   </table>
+  <br>
+  <br>
+</body>
+</html>
+    
+    
+    
+    
+    
+  </body>
+</html>

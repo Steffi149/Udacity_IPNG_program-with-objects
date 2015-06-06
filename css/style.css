@@ -1,0 +1,90 @@
+.TOC {
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+}
+
+a:link {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: grey;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: white;
+  font-family: Arial, Cambria, sans-serif;
+  padding: 20px;
+}
+
+body {
+  background-color: black;
+  margin: 15px auto;
+  max-width: 1880px;
+  padding: 0;
+  font-size: 100%;
+}
+
+h2 {
+  background-color: gray;
+  font-family: Helvetica, Arial, Cambria, sans-serif;
+  padding: 5px;
+}
+
+h3 {
+  background-color: #D8D8D8;
+  font-family: Helvetica, Arial, Cambria, sans-serif;
+  width: 550px;
+}
+
+.concept {
+  background-color: white;
+}
+
+.extra {
+  background-color: #CCCCFF;
+  width: 550px;
+  padding: 10px;
+  float: right;
+  border: 3px dashed #CCC;
+  border-radius: 34px;
+  margin-right: 20px;
+}
+
+.linkedImage {
+  float: right;
+  width: 300px;
+  height: 200px;
+  margin-right: 300px;
+}
+
+.tg {
+  border-collapse: collapse;
+  text-align: left;
+  width: 1880px;
+  float: left;
+}
+
+.tg td {
+  font-family: Arial, Cambria, sans-serif;
+  font-size: 14px;
+  padding: 9px;
+  background-color: #e8edff;
+}
+
+.tg th {
+  font-family: Helvetica, Arial, Cambria, sans-serif;
+  font-size: 120%;
+  border-color: #aabcfe;
+  color: #039;
+  font-weight: bold;
+  background-color: #b9c9fe;
+}
